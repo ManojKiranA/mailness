@@ -2,9 +2,9 @@
 
 namespace App\Jobs;
 
-use App\Models\Contact;
-use App\Models\Field;
-use App\Models\Import;
+use App\Contact;
+use App\Field;
+use App\Import;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

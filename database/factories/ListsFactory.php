@@ -2,7 +2,7 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Models\Lists;
+use App\Lists;
 use Faker\Generator as Faker;
 
 $factory->define(Lists::class, function (Faker $faker) {

@@ -2,17 +2,17 @@
 
 namespace App\Rules;
 
-use App\Models\Contact;
-use App\Models\Lists;
+use App\Contact;
+use App\Lists;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Database\Eloquent\Builder;
 
 class EmailUniqueForEachListRule implements Rule
 {
-    /** @var \App\Models\Lists|null */
+    /** @var \App\Lists|null */
     private $list;
 
-    /** @var \App\Models\Contact|null */
+    /** @var \App\Contact|null */
     private $contact;
 
     /**

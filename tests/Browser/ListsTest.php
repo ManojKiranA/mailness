@@ -2,7 +2,7 @@
 
 namespace Tests\Browser;
 
-use App\Models\Lists;
+use App\Lists;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\Browser\Pages\ListCreatePage;

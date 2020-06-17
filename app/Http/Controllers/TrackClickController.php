@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CampaignClickLink;
-use App\Models\CampaignLink;
-use App\Models\Contact;
+use App\CampaignClickLink;
+use App\CampaignLink;
+use App\Contact;
 
 class TrackClickController extends Controller
 {

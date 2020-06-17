@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
-use App\Models\Field;
+use App\Contact;
+use App\Field;
 use App\Http\Requests\ListStoreRequest;
 use App\Http\Requests\ListUpdateRequest;
 use App\Http\Requests\StoreSubscriptionRequest;
 use App\Jobs\SendConfirmSubscriptionEmail;
-use App\Models\Lists;
+use App\Lists;
 use Illuminate\Http\Request;
 
 class ListsController extends Controller
@@ -72,7 +72,7 @@ class ListsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Lists  $lists
+     * @param  \App\Lists  $lists
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Lists $lists)
@@ -88,7 +88,7 @@ class ListsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Lists  $lists
+     * @param  \App\Lists  $lists
      * @return \Illuminate\Http\Response
      */
     public function edit(Lists $lists)
@@ -100,7 +100,7 @@ class ListsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Lists  $lists
+     * @param  \App\Lists  $lists
      * @return \Illuminate\Http\Response
      */
     public function update(ListUpdateRequest $request, Lists $lists)
@@ -117,7 +117,7 @@ class ListsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Lists  $lists
+     * @param  \App\Lists  $lists
      * @return \Illuminate\Http\Response
      */
     public function destroy(Lists $lists)
@@ -132,7 +132,7 @@ class ListsController extends Controller
     /**
      * Subscribe form.
      *
-     * @param \App\Models\Lists $lists
+     * @param \App\Lists $lists
      */
     public function subscribe(Lists $list)
     {
@@ -143,7 +143,7 @@ class ListsController extends Controller
      * Save subscribe.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param \App\Models\Lists $lists
+     * @param \App\Lists $lists
      */
     public function subscribeStore(StoreSubscriptionRequest $request, Lists $list)
     {

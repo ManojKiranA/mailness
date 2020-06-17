@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ImportSaveRequest;
-use App\Models\Import;
+use App\Import;
 use App\Jobs\ImportContacts;
-use App\Models\Lists;
+use App\Lists;
 use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
